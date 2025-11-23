@@ -1,0 +1,156 @@
+.hero{
+  background: url('/assets/halo-banner.jpg') center/cover no-repeat;
+  height:48vh;
+  position:relative;
+  @include flex-center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero-books{
+  background: url('/assets/Halo-Book.jpg') center/cover no-repeat;
+  height:48vh;
+  position:relative;
+  @include flex-center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero-movies{
+  background: url('/assets/CxULIwPUQAAbWLY.jpg') top/cover no-repeat;
+  height:48vh;
+  position:relative;
+  @include flex-center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero-series{
+  background: url('/assets/Halo-Legends.avif') top/cover no-repeat;
+  height:48vh;
+  position:relative;
+  @include flex-center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero-games{
+  background: url('/assets/halo-banner.jpg') center/cover no-repeat;
+  height:48vh;
+  position:relative;
+  @include flex-center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero{
+  background: url('/assets/halo-banner.jpg') center/cover no-repeat;
+  height:48vh;
+  position:relative;
+  @include flex-center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+}
+.logo-left {
+  position: absolute;
+  top: 1px;
+  left: 28px;
+  width: 130px;
+  height: auto;
+  z-index: 10;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,.6));
+}
+
+.hero.small{
+  height:48vh;
+  background-size:cover;
+}
+
+.hero-books.small{
+  height:48vh;
+  background-size:cover;
+}
+
+.hero-movies.small{
+  height:48vh;
+  background-size:cover;
+}
+
+.hero-series.small{
+  height:48vh;
+  background-size:cover;
+}
+
+.hero-games.small{
+  height:48vh;
+  background-size:cover;
+}
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.6))
+}
+.logo{
+  position:relative;
+  font-family:$halo-font;
+  color:$accent;font-size:3rem;
+  letter-spacing:6px;
+  text-shadow:0 6px 30px rgba(0,0,0,.6)
+}
+.main-nav{
+  position:absolute;
+  top:18px;
+  right:28px;
+  display:flex;gap:1rem
+}
+.main-nav a{
+  background:rgba(0,0,0,.35);
+  padding:.5rem .8rem;
+  border-radius:8px;
+  color:$text-light;
+  text-decoration:none;border:1px solid rgba(255,255,255,.03)
+}
+
+.hamburger{
+  display:none;
+  position:absolute;
+  top:14px;
+  right:28px;
+  background:rgba(0,0,0,.35);
+  color:$text-light;
+  border:1px solid rgba(255,255,255,.03);
+  padding:.4rem .6rem;
+  border-radius:6px;
+  font-size:1.2rem;
+}
+
+
+@media (max-width:700px){
+  .main-nav{ display:none; position:absolute; top:56px; right:16px; flex-direction:column; gap:.5rem; background:rgba(0,0,0,.6); padding:.6rem; border-radius:8px; }
+  .main-nav.open{ display:flex; }
+  .hamburger{ display:block }
+}
+.hud{
+  position:absolute;
+  inset:0;pointer-events:none
+}
+.scan-line{
+  position:absolute;
+  left:0;right:0;
+  height:2px;
+  top:10%;
+  opacity:.5;background:linear-gradient(90deg, transparent, rgba(127,227,255,.9), transparent)
+}
+.hud-center{
+  position:absolute;
+  top:44%;left:50%;
+  transform:translate(-50%,-50%);
+  font-family:$halo-font;color:rgba($text-light, .95);
+  letter-spacing:4px;opacity:.8
+}

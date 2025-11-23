@@ -1,0 +1,50 @@
+.card{
+  background:linear-gradient(180deg, rgb(25, 30, 48), rgb(15, 20, 30));
+  border-radius:$radius;
+  padding:0;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.04);
+  box-shadow:$shadow;
+  @include card-hover;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  @include responsive-grid(260px);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, 1fr); padding: 16px; }
+}
+@media (max-width: 600px) {
+  .cards { grid-template-columns: repeat(1, 1fr); padding: 12px; }
+}
+
+.card img{
+  height:160px;
+  object-fit:cover;
+  width:100%;
+}
+.card h2{font-family:$halo-font;color:$accent-2;padding:1rem 1rem 0}
+.card p{
+  padding:0.5rem 1rem 1rem;
+  color:rgba(230,238,242,.9);
+  flex: 1;
+}
+.card button{
+  margin:0 0 1rem 1rem; 
+  border:none;
+  background:$accent;
+  padding:.6rem 1rem;
+  border-radius:8px;
+  color:#001;
+  display:inline-block;
+  min-height:40px; 
+  align-self:flex-start; 
+}
